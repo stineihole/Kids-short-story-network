@@ -77,7 +77,7 @@ Through this project I strengthened my understanding of:
 
 ## 🌍 Live Version
 
-(Insert GitHub Pages link here once deployed)
+https://stineihole.github.io/Kids-short-story-network/ 
 
 ---
 
