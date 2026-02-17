@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create your own story</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>Make your own story with StoryPals!</h1>
+            <nav>
+                <a href="childrens_social.html" class="navBtn" id="homeBtn">Home 📖</a>
+                <a href="create_story.html" class="navBtn" id="createBtn">Create story ✏️</a>
+                <a href="profil.html" class="navBtn" id="profilBtn">Profile 🧑</a>
+                <a href="parent_console.html" class="navBtn" id="parentBtn">Parental Controll 🛡️</a>
+            </nav>
+        </header>
+        <!--Form to create your own story-->
+        <div id="storyInput">
+            <select id="storyType" onchange="handleStoryTypeChange()">
+                <option value="">Choose a story type </option>
+                <option value="Fairy Tale">✨  Fairy Tale</option>
+                <option value="Adventure">🌍 Adventure</option>
+                <option value="Bedtime Story">🌙 Bedtime Story</option>
+            </select>
+            <select id="characterType">
+                <option value="">Choose main character </option>
+                <option value="Prince">🤴 Prince</option>
+                <option value="Princess">👸 Princess</option>
+                <option value="Unicorn">🦄 Unicorn</option>
+                <option value="Dragon">🐉 Dragon</option>
+                <option value="Pirate">🏴‍☠️ Pirate</option>
+                <option value="Cow">🐄 Cow</option>
+                <option value="Pig">🐖 Pig</option>
+                <option value="Lion">🦁 Lion</option>
+            </select>
+            <input id="characterName" type="text" placeholder="Main character name">
+            <!-- Dynamic selector based on story type -->
+            <div id="dynamicInputContainer" style="display: none;">
+                <select id="storyTypeSpecific">
+                    <option value="">Select an option</option>
+                </select>
+            </div>
+            
+            <button class="makeStory" onclick="handleCreateStory()">Make story!</button>
+            <div id="toastContainer"></div>
+        </div>
+        
+        
+        <div id="myStory">
+            <!--Present story-->
+        </div>
+        <button id="publishBtn" onclick="handlePublishStory()">Share story with friends</button>
+
+        <footer>
+            <p> &copy 2025 StoryPals</p>
+        </footer>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+        <script src="observer.js"></script>
+    </body>
+</html>

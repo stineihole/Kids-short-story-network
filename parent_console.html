@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parental Controll</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>Parental Controll</h1>
+            <nav>
+                <a href="childrens_social.html" class="navBtn" id="homeBtn">Home 📖</a>
+                <a href="create_story.html" class="navBtn" id="createBtn">Create story ✏️</a>
+                <a href="profil.html" class="navBtn" id="profilBtn">Profile 🧑</a>
+                <a href="parent_console.html" class="navBtn" id="parentBtn">Parental Controll 🛡️</a>
+            </nav>
+        </header>
+        <div id="parentalProtector">
+            <h4>Log in to Parental Controll</h4>
+            <p class="pswProtect">The password is: <b>StoryPals123</b></p>
+            <br>
+            <label class="pswProtect" for="psw">Password: </label>
+            <input class="pswProtect" id="psw" type="password" placeholder="Enter password" required>
+            <button id="login" onclick="checkPassword()">Login</button>
+        </div>
+        <div id="toastContainer"></div>
+        <div id="parentContainer" class="hidden">
+            <div id="leftPanel">
+                <div id="friendSearchContainer"></div>
+                <div id="requestsContainer"></div>
+            </div>
+
+            <div id="friends" class="friendsContainer"></div>
+        </div>
+        <div id="settingsContainer" class="hidden">
+            <h3>Settings</h3>
+            <div id="settingsWrap">
+                <div id="settings">
+                    <h4>User Status</h4>
+                    <div class="statusRow">
+                        <label for="tommyOnlineToggle">Tommy's Online Status:</label>
+                        <button id="tommyOnlineToggle" class="toggleBtn" aria-label="Toggle Tommy's online status" onclick="UI.toggleUserOnlineStatus()"> 
+                            <span id="tommyStatusIcon" class="status offline" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <label for="lang">Choose language</label>
+                    <select id="lang">
+                        <option value="english">English</option>
+                        <option value="norwegian">Norwegian (not available yet)</option> 
+                        <option value="spanish">Spanish (not available yet)</option> 
+                    </select>
+                </div>
+                <div id="terms_policy">
+                    <p id="privacyPolicyBtn" class="policyLink">Privacy Policy</p>
+                    <p id="termsBtn" class="policyLink">Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for Privacy Policy / Terms -->
+        <div id="policyModal" class="modal" aria-hidden="true">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+                <h2 id="modalTitle">Policy</h2>
+                <div id="modalBody" class="modal-body">
+                    <!-- Content injected via JS -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p> &copy 2025 StoryPals</p>
+        </footer>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+        <script src="observer.js"></script>
+
+    </body>
+</html>

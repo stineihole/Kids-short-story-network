@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Childrens Social</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+    <body>
+
+        
+        <!--Home page-->
+        <header id="header">
+            <h1>Welcome to StoryPals!</h1>
+            <nav>
+                <a href="childrens_social.html" class="navBtn" id="homeBtn">Home 📖</a>
+                <a href="create_story.html" class="navBtn" id="createBtn">Create story ✏️</a>
+                <a href="profil.html" class="navBtn" id="profilBtn">Profile 🧑</a>
+                <a href="parent_console.html" class="navBtn" id="parentBtn">Parental Controll 🛡️</a>
+            </nav>
+        </header>
+        <div id="toastContainer"></div>
+        
+        <section class="feed">
+
+            <div id="posts"></div>
+            
+            <div id="friends"></div>
+        
+        </section>
+
+        <footer>
+            <p> &copy 2025 StoryPals</p>
+        </footer>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+        <script src="observer.js"></script>
+        <script>
+            // Display all stories when the page loads
+            window.addEventListener('DOMContentLoaded', function() {
+                UI.displayFeed(myFeed);
+                // show friends list
+                UI.displayFriends();
+            });
+        </script>
+    </body>
+</html>

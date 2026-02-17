@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>Your profile</h1>
+            <nav>
+                <a href="childrens_social.html" class="navBtn" id="homeBtn">Home 📖</a>
+                <a href="create_story.html" class="navBtn" id="createBtn">Create story ✏️</a>
+                <a href="profil.html" class="navBtn" id="profilBtn">Profile 🧑</a>
+                <a href="parent_console.html" class="navBtn" id="parentBtn">Parental Controll 🛡️</a>
+            </nav>
+        </header>
+        <div id="toastContainer"></div>
+        <div id="profilContainer">
+            <div id="userCard">
+                <div id="avatarCard">
+                    <div id="currentAvatar" class="avatar">🐱</div>
+
+                    <h3 class="profile-name" id="profileName"></h3>
+                    <label>Choose your avatar:</label>
+                    <br>
+                    <div id="avatarOptions" class="avatar-options">
+                        <button class="avatar-choice">🐱</button>
+                        <button class="avatar-choice">🐶</button>
+                        <button class="avatar-choice">🐵</button>
+                        <button class="avatar-choice">🐯</button>
+                        <button class="avatar-choice">🐸</button>
+                        <button class="avatar-choice">🧚</button>
+                        <button class="avatar-choice">🐉</button>
+                        <button class="avatar-choice">🦄</button>
+                    </div>
+                </div>
+
+                <div id="userInfo">
+                    <h3>Your profile</h3>
+                    <p id="name"></p>
+                    <p id="age"></p>
+                    <p id="city"></p>
+                </div>
+            </div>
+        </div>
+        <div id="yourStories">
+
+        </div>
+
+        <footer>
+                <p> &copy 2025 StoryPals</p>
+        </footer>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+        <script src="observer.js"></script>
+        <script>
+            UI.displayProfile();
+            
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEST</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+
+        <!--Home page-->
+        <header id="header">
+            <h1>Welcome to StoryPals!</h1>
+            <nav>
+                <a href="childrens_social.html" class="navBtn" id="homeBtn">Home</a>
+                <a href="create_story.html" class="navBtn" id="createBtn">Create story</a>
+                <a href="profil.html" class="navBtn" id="profilBtn">Profil</a>
+                <a href="parent_console.html" class="navBtn" id="parentBtn">Parental Console</a>
+            </nav>
+        </header>
+
+        <!--Sign up form-->
+        <div id="signUp" class="modal">
+            <form class="model-container">
+                <div class="signUpContainer">
+                    <h1 id="title">Sign Up to StoryPals!</h1>
+                    <hr>
+                    <label for="firstname"><b>First name:</b></label>
+                    <input type="text" placeholder="Write you're first name" name="firstname" required>
+                    <br>
+                    <label for="lastname"><b>Last name:</b></label>
+                    <input type="text" placeholder="Write you're last name" name="lastname" required>
+                    <br>
+                    <label for="age"><b>Age:</b></label>
+                    <input type="number" placeholder="Write you're age" name="age" required>
+                    <br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="psw" required pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number, one uppercase and lowercase letter, and at least 8 characters">    
+                    <br>
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" id="pswr" placeholder="Repeat Password" name="psw-repeat" required>
+                    <br>
+                    <div id="message">
+                        <h4>Password must have the following:</h4>
+                        <p id="letter" class="invalid">A <b>lowercase</b></p>
+                        <p id="capital" class="invalid">A <b>capital (uppercase)</b>letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    </div>
+
+                    <div class="clearfix">
+                        <button type="button" class="btnSignUp" id="cancelbtn" onclick="document.getElementById('signUp').style.display='none'" >Cancel</button>
+                        <button type="submit" class="btnSignUp" id="signup" onclick="document.getElementById('signUp').style.display='none'">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div> 
+
+
+        <!--Feed-->
+        <section class="feed">
+            <div id="posts">
+                <h3>Mia's story</h3>
+
+            </div>
+
+            <div id="friends">
+
+            </div>
+        
+        </section>
+
+        <footer>
+            <p> &copy 2025 StoryPals</p>
+            
+        </footer>
+        <script src="signUp_script.js"></script>
+    </body>
+</html>
+
