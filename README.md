@@ -18,6 +18,18 @@ This project investigates how we can design a digital space that:
 
 ---
 
+## 📚 Academic Context
+
+This project was developed as part of a university course in UI programming and architectures. The assignment focused on designing and implementing a structured frontend application with clear separation of concerns.
+
+---
+
+## 🌍 Live Version
+
+https://stineihole.github.io/Kids-short-story-network/ 
+
+---
+
 ## 👥 User Roles
 
 The platform includes two primary user types:
@@ -73,15 +85,4 @@ Through this project I strengthened my understanding of:
 - Balancing usability and safety
 - Separating logic and presentation layers
 
----
-
-## 🌍 Live Version
-
-https://stineihole.github.io/Kids-short-story-network/ 
-
----
-
-## 📚 Academic Context
-
-This project was developed as part of a university course in UI programming and architectures. The assignment focused on designing and implementing a structured frontend application with clear separation of concerns.
 
