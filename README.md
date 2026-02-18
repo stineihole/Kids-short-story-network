@@ -40,7 +40,8 @@ The platform includes two primary user types:
 
 - 👨‍👩‍👧 Parent user  
   - Access a parent console  
-  - Monitor activity and usage  
+  - Monitor activity and usage
+  - Control connections to other users/children
 
 ---
 
