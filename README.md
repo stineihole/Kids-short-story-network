@@ -20,7 +20,7 @@ This project investigates how we can design a digital space that:
 
 ## 📚 Academic Context
 
-This project was developed as part of a university course in UI programming and architectures. The assignment focused on designing and implementing a structured frontend application with clear separation of concerns.
+This project was developed as part of a course in UI programming and architectures (MH130) at Høyskolen Kristiania. The assignment focused on designing and implementing a social media network for children, with a structured frontend application focusing on clear separation of concerns based on the target group.
 
 ---
 
